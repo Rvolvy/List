@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test DOM</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcaNbfV5c0GEE6pv2KVKSdKUM8x7k-3epbRQ&usqp=CAU">
+  <script src="index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body">
+  <!-- Luar -->
+  <div class="flex flex-row justify-center items-center gap-[1%]">
+    
+    <!-- Div Kiri -->
+    <div class="flex flex-col justify-center items-center h-[100vh] w-[100%] bg-gradient-to-b from-[#7d02f7] to-[#00f7ff]">
+      <!-- Form -->
+      <div class="bg-[#232323] p-[30px] rounded-[5px]">
+        <form class="flex flex-col justify-center items-center gap-[30px]" onclick="return false">
+          <div class="flex flex-col justify-center items-start gap-[5px]">
+            <label class="text-white text-[15px]">Nama</label>
+            <input class="px-[10px] py-[3px] outline-none border-none rounded-[5px]" id="nama" type="text" placeholder="Isi nama anda">
+            <label class="text-white text-[15px]">Kelas</label>
+            <input class="px-[10px] py-[3px] outline-none border-none rounded-[5px]" id="kelas" type="text" placeholder="Kelas anda">
+            <label class="text-white text-[15px]">Jurusan</label>
+            <input class="px-[10px] py-[3px] outline-none border-none rounded-[5px]" id="jurusan" type="text" placeholder="Jurusan anda">
+          </div>
+          <input class="text-black font-semibold bg-white px-[30px] py-[5px] rounded-[5px] duration-[0.5s] hover:bg-[#00f7ff] hover:text-white hover:scale-[1.07] cursor-pointer" type="button" value="Submit" onclick="Click()">
+        </form>
+      </div>
+      <p class="text-white cursor-pointer duration-[0.5s] hover:scale-[1.05]" id="urName" onclick="gantiNama()">Klik untuk isi nama</p>
+    </div>
+
+    <!-- Div Kanan -->
+    <div class="flex flex-col justify-center items-center h-[100vh] w-[100%] gap-[10px] bg-gradient-to-t from-[#7d02f7] to-[#00f7ff]">
+      <p class="text-white text-[30px] font-bold">Output:</p>
+      <div>
+        <ul id="result"></ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
